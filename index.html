@@ -8,5 +8,25 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="resizer">
+      <input type="file" class="resizer--file" />
+      <div class="dimensions">
+        <input
+          type="text"
+          class="resizer--input resizer--input--width"
+          value="0"
+        />x
+        <input
+          type="text"
+          class="resizer--input resizer--input--height"
+          value="0"
+        />
+        <label>
+          <input type="checkbox" class="resizer--aspect" />Keep Aspect Ratio
+        </label>
+      </div>
+      <canvas class="resizer--canvas" width="500" height="500"></canvas>
+    </div>
+  </body>
 </html>
